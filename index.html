@@ -76,5 +76,29 @@ img {
   <p>Tydzień później do sklepów trafi najmocniejsza z nowych propozycji, a więc <b>GeForce RTX 3090</b> – jej cena to 7029 złotych. </p>
  <p> Ostatnia z nowości trafi do sklepów w październiku – cena modelu <b>RTX 3070</b> to 2359 złotych.</p>
   
+ <div class="" style="max-width:500px">
+  <img class="mySlides" src="https://cdn.vox-cdn.com/thumbor/e0gA_4nTfmqtpBF0Av8efB0BuWc=/0x0:1071x602/920x613/filters:focal(451x216:621x386):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/67337453/kNmhDjg.0.png" style="width:100%">
+  <img class="mySlides" src="https://cnet3.cbsistatic.com/img/iumWE1j9xMHF0fZcGkI_RPtd-Ik=/940x0/2020/09/01/809e4f50-5e89-4c5d-a6b0-c93fa045c268/screen-shot-2020-09-01-at-9-35-51-am.png" style="width:100%">
+  <img class="mySlides" src="https://tpucdn.com/gpu-specs/images/c/3622-front.jpg" style="width:100%">
+  <img class="mySlides" src="https://i0.wp.com/ymcinema.com/wp-content/uploads/2020/09/Nvidia-RTX-3090.007.jpeg?fit=1024%2C576&ssl=1" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 4 seconds
+}
+</script>
+ 
  </body>
 </html>
